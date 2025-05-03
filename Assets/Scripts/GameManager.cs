@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     {
         foreach (var wall in goalWalls)
         {
-            wall.mode = (currentMode == GameMode.PingPong)
+            wall.wallMode = (currentMode == GameMode.PingPong)
                 ? GoalWall.WallMode.PingPong
                 : GoalWall.WallMode.Squash;
         }

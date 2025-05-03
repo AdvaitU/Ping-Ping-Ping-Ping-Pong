@@ -42,7 +42,7 @@ public class PaddleController : MonoBehaviour
             Rigidbody2D puckRb = collision.gameObject.GetComponent<Rigidbody2D>();
             if (puckRb != null)
             {
-                puckRb.AddForce(currentVelocity * hitForceMultiplier, ForceMode2D.Impulse);
+                puckRb.AddForce(currentVelocity * hitForceMultiplier, ForceMode2D.Impulse);  // Adding new Vector2(1, 1) to avoid zero vector
             }
         }
     }

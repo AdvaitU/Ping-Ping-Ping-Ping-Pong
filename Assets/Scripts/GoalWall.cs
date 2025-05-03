@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,18 +13,29 @@ public class GoalWall : MonoBehaviour
 {
     public enum WallMode { Squash, PingPong }
 
-    [Header("Wall Mode")]
+    //----------------------------------------------------------------
+
+    [Header("Wall's Current Mode of Operation")]
 
     [Tooltip("Set the behavior of this GoalWall.")]
-    public WallMode mode = WallMode.PingPong;
+    public WallMode wallMode = WallMode.PingPong;
 
-    [Header("General Settings")]
+    //----------------------------------------------------------------
+
+    [Header("Object References")]
 
     [Tooltip("Transform to respawn the puck at (used in Ping Pong mode).")]
     public Transform puckRespawnPoint;
 
     [Tooltip("Reference to the puck GameObject.")]
     public GameObject puck;
+
+    [Header("Wall Bounce Properties")]
+
+    [Tooltip("Physics Material 2D to control bounce behavior.")]
+    public PhysicsMaterial2D wallMaterial;
+
+    //----------------------------------------------------------------
 
     [Header("Player Association")]
 
@@ -35,8 +47,15 @@ public class GoalWall : MonoBehaviour
     [Tooltip("Score count (only used in Squash mode).")]
     public int squashHitCount = 0;
 
+    
+
     private ScoreManager scoreManager;
 
+    private void Awake()
+    {
+       
+        
+    }
     void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
@@ -51,7 +70,7 @@ public class GoalWall : MonoBehaviour
     {
         if (!other.CompareTag("Puck")) return;
 
-        if (mode == WallMode.PingPong)
+        if (wallMode == WallMode.PingPong)
         {
             if (scoreManager != null)
             {
@@ -61,7 +80,7 @@ public class GoalWall : MonoBehaviour
 
             StartCoroutine(RespawnPuck());
         }
-        else if (mode == WallMode.Squash)
+        else if (wallMode == WallMode.Squash)
         {
             squashHitCount++;
             Debug.Log("Squash Hits: " + squashHitCount);
@@ -84,4 +103,27 @@ public class GoalWall : MonoBehaviour
         puck.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         puck.SetActive(true);
     }
+
+    public void SetGameMode()
+    {
+        if (wallMode == WallMode.PingPong)
+        {
+            wallMaterial = null;                  // Set wall to not 'bouncy'
+        }
+        else if (wallMode == WallMode.Squash)
+        {
+            var col = GetComponent<BoxCollider2D>();
+            if (wallMaterial != null)
+            {
+                col.sharedMaterial = wallMaterial;
+            }
+        }
+        else
+        {
+            Debug.Log("No game mode set for " + this.name);
+        }
+
+    }
+
+    
 }

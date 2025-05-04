@@ -10,10 +10,10 @@ public class PuckController : MonoBehaviour
 {
     [Header("Physics Tuning")]
 
-    [Tooltip("Drag applied every frame to reduce velocity.")]
+    [Tooltip("Drag applied every frame to reduce velocity. Defaults to 0.1")]
     public float drag = 0.1f;
 
-    [Tooltip("Maximum allowed puck speed before clamping.")]
+    [Tooltip("Maximum allowed puck speed before clamping. Defaults to 15, 20 -25 for the game.")]
     public float maxSpeed = 15f;
 
     [Tooltip("Minimum speed below which puck will be nudged.")]
@@ -32,9 +32,33 @@ public class PuckController : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    [Header("Animation Parameters")]
+
+    [Tooltip("Reference to Animator")]
+    public Animator animator;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = rb.GetComponent<Animator>();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Paddle") || collision.gameObject.CompareTag("Wall"))
+        {
+            //Debug.Log("Collision with Paddle or Wall detected.");
+            animator.SetBool("isBouncing", true);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Paddle") || collision.gameObject.CompareTag("Wall"))
+        {
+            // Stop the animation
+            animator.SetBool("isBouncing", false);
+        }
     }
 
     void FixedUpdate()

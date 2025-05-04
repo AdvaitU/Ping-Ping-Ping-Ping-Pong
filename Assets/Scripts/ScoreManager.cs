@@ -9,7 +9,9 @@ public class ScoreManager : MonoBehaviour
     [Header("Score Limits")]
 
     [Tooltip("Points needed to win in Ping Pong mode.")]
-    public int winScore = 7;
+    public int winScorePingPong = 7;
+    [Tooltip("Points needed to win in Squash mode.")]
+    public int winScoreSquash = 7;
 
     [Header("Scores")]
 
@@ -37,11 +39,11 @@ public class ScoreManager : MonoBehaviour
 
     private void CheckWinCondition()
     {
-        if (player1Score >= winScore)
+        if (player1Score >= winScorePingPong)
         {
             Debug.Log("Player 1 Wins!");
         }
-        else if (player2Score >= winScore)
+        else if (player2Score >= winScorePingPong)
         {
             Debug.Log("Player 2 Wins!");
         }

@@ -15,10 +15,12 @@ public class PaddleController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 lastPosition;
     private Vector2 currentVelocity;
+    public Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         rb.isKinematic = true;
         lastPosition = transform.position;
     }
@@ -39,11 +41,21 @@ public class PaddleController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Puck"))
         {
+            animator.SetBool("isSwatting", true);
             Rigidbody2D puckRb = collision.gameObject.GetComponent<Rigidbody2D>();
             if (puckRb != null)
             {
                 puckRb.AddForce(currentVelocity * hitForceMultiplier, ForceMode2D.Impulse);  // Adding new Vector2(1, 1) to avoid zero vector
+                
             }
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Puck"))
+        {
+            animator.SetBool("isSwatting", false);
         }
     }
 }

@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059b0e430d0a75a4187be9b8a83213ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMode: 1
+  currentMode: 0
   scoreManager: {fileID: 1961146223}
   goalWalls:
   - {fileID: 1388316667}
@@ -524,6 +524,7 @@ GameObject:
   - component: {fileID: 670258006}
   - component: {fileID: 670258005}
   - component: {fileID: 670258004}
+  - component: {fileID: 670258007}
   m_Layer: 3
   m_Name: Puck
   m_TagString: Puck
@@ -572,8 +573,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: c7f768e44c47d064bbbfcb38081da216, type: 3}
-  m_Color: {r: 0.61635214, g: 0.025196673, b: 0.025196673, a: 1}
+  m_Sprite: {fileID: -835046038, guid: 0b602768d076f3945a1b9d48aec61f35, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -630,9 +631,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.0635128}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6047106
 --- !u!50 &670258005
 Rigidbody2D:
   serializedVersion: 4
@@ -672,12 +673,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac21fa50431b35489a12a8706cdf6aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drag: 0.1
-  maxSpeed: 15
+  drag: 0
+  maxSpeed: 25
   minSpeed: 1
   leftBoundaryX: 0
   rightBoundaryX: 40
   warpYOffset: 0.01
+  animator: {fileID: 670258007}
+--- !u!95 &670258007
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670258001}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cbf98b205f6cb0949b4f930dac02ea87, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &972959182
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +715,7 @@ GameObject:
   - component: {fileID: 972959186}
   m_Layer: 3
   m_Name: BouncyWall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1126,9 +1149,10 @@ GameObject:
   - component: {fileID: 1373286545}
   - component: {fileID: 1373286544}
   - component: {fileID: 1373286543}
+  - component: {fileID: 1373286546}
   m_Layer: 3
   m_Name: Paddle
-  m_TagString: Untagged
+  m_TagString: Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1174,8 +1198,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 8dd9d051635920749970910ca7ec1316, type: 3}
-  m_Color: {r: 0.1851192, g: 0.7951074, b: 0.9056604, a: 1}
+  m_Sprite: {fileID: 1242936627, guid: c3f8677ee9ca30c419420575c22cf2cd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1195,7 +1219,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20, y: 5, z: 0}
-  m_LocalScale: {x: 2.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1232,18 +1256,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0000009536743, y: 0.07610369}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.6399999, y: 0.75428563}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.6641827, y: 0.80485535}
   m_EdgeRadius: 0.1
 --- !u!50 &1373286544
 Rigidbody2D:
@@ -1285,6 +1309,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitForceMultiplier: 10
+  animator: {fileID: 1373286546}
+--- !u!95 &1373286546
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373286540}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 290454f1983956d40b7573717e46fcb2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1388316663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,7 +1345,7 @@ GameObject:
   - component: {fileID: 1388316667}
   m_Layer: 3
   m_Name: GoalWall_P1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1429,12 +1475,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178c943b9140e884c8bdceddf88417ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallMode: 1
-  puckRespawnPoint: {fileID: 1619487512}
+  wallMode: 0
   puck: {fileID: 670258001}
-  wallMaterial: {fileID: 0}
+  wallMaterial: {fileID: 6200000, guid: 5675d9cc53811f049b2f8eba500ef093, type: 2}
+  wallCollider: {fileID: 1388316666}
+  wallSpriteRenderer: {fileID: 1388316664}
   isPlayer1Wall: 1
   squashHitCount: 0
+  respawnTime: 1
+  puckRespawnPoint: {fileID: 1619487512}
 --- !u!1 &1426091372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,7 +1580,7 @@ GameObject:
   m_Layer: 3
   m_Name: RespawnPoint_P1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1663,7 +1712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462a59e0f315c3c4387beb242dcf88a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScore: 7
+  winScorePingPong: 7
+  winScoreSquash: 7
   player1Score: 0
   player2Score: 0
 --- !u!4 &1961146224

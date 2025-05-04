@@ -14,13 +14,13 @@ public class Portal : MonoBehaviour
         if (puck.CompareTag("Puck"))
         {
             puck.transform.position = new Vector3(destination.position.x, puck.transform.position.y, 0);
-            Debug.Log(puck.transform.position.y);
+            //Debug.Log(puck.transform.position.y);
         }
             
     }
 
     private void OnTriggerExit2D(Collider2D puck)
     {
-        Debug.Log(puck.transform.position.y);
+        //Debug.Log(puck.transform.position.y);
     }
 }

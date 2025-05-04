@@ -18,22 +18,22 @@ public class GoalWall : MonoBehaviour
     [Header("Wall's Current Mode of Operation")]
 
     [Tooltip("Set the behavior of this GoalWall.")]
-    public WallMode wallMode = WallMode.PingPong;
+    public WallMode wallMode = WallMode.Squash;   // Defaults to Ping Pong Mode, but can be set in the Inspector using a dropdown.
 
     //----------------------------------------------------------------
 
     [Header("Object References")]
 
-    [Tooltip("Transform to respawn the puck at (used in Ping Pong mode).")]
-    public Transform puckRespawnPoint;
-
     [Tooltip("Reference to the puck GameObject.")]
     public GameObject puck;
 
-    [Header("Wall Bounce Properties")]
-
     [Tooltip("Physics Material 2D to control bounce behavior.")]
     public PhysicsMaterial2D wallMaterial;
+    public Collider2D wallCollider;
+    public SpriteRenderer wallSpriteRenderer;
+
+    private ScoreManager scoreManager;
+
 
     //----------------------------------------------------------------
 
@@ -42,33 +42,48 @@ public class GoalWall : MonoBehaviour
     [Tooltip("If true, this wall belongs to Player 1. If false, Player 2.")]
     public bool isPlayer1Wall = true;
 
+    //----------------------------------------------------------------
+
     [Header("Squash Mode Score")]
 
     [Tooltip("Score count (only used in Squash mode).")]
     public int squashHitCount = 0;
 
-    
+    //----------------------------------------------------------------
+    [Header("Respawn Settings")]
+    [Tooltip("Time in seconds to wait before respawning the puck.")]
+    public float respawnTime = 1f;
 
-    private ScoreManager scoreManager;
+    [Tooltip("Transform to respawn the puck at (used in Ping Pong mode).")]
+    public Transform puckRespawnPoint;
 
-    private void Awake()
-    {
-       
-        
-    }
     void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
+        SetGameMode(wallMode); // Set the initial game mode
 
-        if (!GetComponent<Collider2D>().isTrigger)
-        {
-            Debug.LogWarning("GoalWall collider must be marked as Trigger!");
-        }
     }
 
+    // In Squash Mode -------------------------------------------
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (!other.gameObject.CompareTag("Puck")) return; // Only Puck collisions are relevant
+        if (wallMode == WallMode.Squash)
+        {
+            squashHitCount++;
+            Debug.Log("Squash Hit Count: " + squashHitCount);
+            if (scoreManager != null)
+            {
+                int scoringPlayer = isPlayer1Wall ? 1 : 2;
+                scoreManager.AddPoint(scoringPlayer);
+            }
+        }
+    }
+    // In Ping Pong Mode ----------------------------------------
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Puck")) return;
+        if (!other.CompareTag("Puck")) return;        // Only Puck collisions are relevant
 
         if (wallMode == WallMode.PingPong)
         {
@@ -80,49 +95,34 @@ public class GoalWall : MonoBehaviour
 
             StartCoroutine(RespawnPuck());
         }
-        else if (wallMode == WallMode.Squash)
-        {
-            squashHitCount++;
-            Debug.Log("Squash Hits: " + squashHitCount);
-
-            // In squash mode, act like a bounce wall — add velocity manually if needed
-            Rigidbody2D puckRb = other.GetComponent<Rigidbody2D>();
-            if (puckRb != null)
-            {
-                puckRb.velocity = new Vector2(-puckRb.velocity.x, puckRb.velocity.y);
-            }
-        }
     }
 
     private System.Collections.IEnumerator RespawnPuck()
     {
         puck.SetActive(false);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(respawnTime);
 
         puck.transform.position = puckRespawnPoint.position;
         puck.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         puck.SetActive(true);
     }
 
-    public void SetGameMode()
+    public void SetGameMode(WallMode mode)
     {
-        if (wallMode == WallMode.PingPong)
+        Debug.Log("Setting wall mode to: " + mode);
+        // Settings for Squash vs. Ping Pong mode
+        if (mode == WallMode.Squash)
         {
-            wallMaterial = null;                  // Set wall to not 'bouncy'
-        }
-        else if (wallMode == WallMode.Squash)
-        {
-            var col = GetComponent<BoxCollider2D>();
-            if (wallMaterial != null)
-            {
-                col.sharedMaterial = wallMaterial;
-            }
+            squashHitCount = 0; // Reset squash hit count
+            wallCollider.isTrigger = false; // Ensure collider is not a trigger so that ball bounces
+            wallCollider.sharedMaterial = wallMaterial; // Set the physics material for squash mode
+            wallSpriteRenderer.color = Color.white; // Set color to white for squash mode to visually be a sprite // CHANGE WHEN SWITCHING TO GRAPHICS
         }
         else
         {
-            Debug.Log("No game mode set for " + this.name);
+            wallCollider.isTrigger = true; // Ensure collider is a trigger
+            wallSpriteRenderer.color = Color.black; // Set color to black for ping pong mode to visually be a sprite // CHANGE WHEN SWITCHING TO GRAPHICS
         }
-
     }
 
     

@@ -6,52 +6,42 @@ using UnityEngine;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    public enum GameMode { Squash, PingPong }
+    public enum GameMode { Squash, PingPong, PhysicsTesting , FreeForm }
 
     [Header("Game Mode")]
 
     [Tooltip("Current game mode.")]
-    public GameMode currentMode = GameMode.PingPong;
+    public GameMode currentMode = GameMode.FreeForm;
 
     [Header("References")]
 
-    [Tooltip("Reference to the ScoreManager.")]
-    public ScoreManager scoreManager;
-
     [Tooltip("All goal walls in the scene.")]
-    public GoalWall[] goalWalls;
+    public GoalWall[] goalWalls = new GoalWall[2];
 
-    void Start()
+    void Awake()      // Before First Frame
     {
-        UpdateAllGoalWalls();
-    }
-
-    public void SetGameMode(GameMode newMode)
-    {
-        currentMode = newMode;
-        UpdateAllGoalWalls();
-    }
-
-    private void UpdateAllGoalWalls()
-    {
-        foreach (var wall in goalWalls)
+        switch(currentMode)
         {
-            wall.wallMode = (currentMode == GameMode.PingPong)
-                ? GoalWall.WallMode.PingPong
-                : GoalWall.WallMode.Squash;
+            case GameMode.Squash:
+                goalWalls[0].wallMode = GoalWall.WallMode.PingPong;
+                goalWalls[1].wallMode = GoalWall.WallMode.Squash;
+                break;
+            case GameMode.PingPong:
+                goalWalls[0].wallMode = GoalWall.WallMode.PingPong;
+                goalWalls[1].wallMode = GoalWall.WallMode.PingPong;
+                break;
+            case GameMode.PhysicsTesting:
+                goalWalls[0].wallMode = GoalWall.WallMode.Squash;
+                goalWalls[1].wallMode = GoalWall.WallMode.Squash;
+                break;
+            case GameMode.FreeForm:
+                // Follow the behaviour set in the Inspector per wall
+                break;
+            default:
+                Debug.LogError("GameManager: Invalid game mode selected.");
+                break;
         }
     }
 
-    public void ResetGame()
-    {
-        if (scoreManager != null)
-        {
-            scoreManager.ResetScores();
-        }
 
-        foreach (var wall in goalWalls)
-        {
-            wall.squashHitCount = 0;
-        }
-    }
 }

@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\goalwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|d:\\personal projects\\ping ping ping ping pong\\ping-ping-ping-ping-pong\\assets\\scripts\\goalwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goalwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|d:\\personal projects\\ping ping ping ping pong\\ping-ping-ping-ping-pong\\assets\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|d:\\personal projects\\ping ping ping ping pong\\ping-ping-ping-ping-pong\\assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|d:\\personal projects\\ping ping ping ping pong\\ping-ping-ping-ping-pong\\assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\puckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,24 +34,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GoalWall.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GoalWall.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoalWall.cs",
               "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GoalWall.cs",
               "RelativeToolTip": "Assets\\Scripts\\GoalWall.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAQwFEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAhwDIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T09:32:46.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:19:53.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScoreManager.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ScoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreManager.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ScoreManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScoreManager.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAtwDMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:26:14.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Portal.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\Portal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Portal.cs",
@@ -59,38 +85,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Portal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T14:56:49.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T14:56:49.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T12:19:53.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ScoreManager.cs",
-              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ScoreManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreManager.cs",
-              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ScoreManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ScoreManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T14:26:14.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PaddleController.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PaddleController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PaddleController.cs",
@@ -98,12 +97,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PaddleController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T13:58:01.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T13:58:01.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PuckController.cs",
               "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PuckController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PuckController.cs",
@@ -111,8 +109,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PuckController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAApwDIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T13:05:29.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T13:05:29.933Z"
             }
           ]
         }

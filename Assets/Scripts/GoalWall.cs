@@ -112,7 +112,7 @@ public class GoalWall : MonoBehaviour
     // Called in Start() to set up wall properties based on the game mode -----------------
     public void SetWallMode(WallMode mode)
     {
-        Debug.Log("Setting" + this.name + "'s mode to: " + mode);
+        //Debug.Log("Setting" + this.name + "'s mode to: " + mode);
         // Settings for Squash vs. Ping Pong mode
         if (mode == WallMode.Squash)
         {

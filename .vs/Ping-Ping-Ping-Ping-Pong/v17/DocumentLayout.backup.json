@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\",
+  "WorkspaceRootPath": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|c:\\users\\ukidvea\\documents\\github\\ping-ping-ping-ping-pong\\assets\\opencv\u002Bunity\\demo\\scripts\\webcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|d:\\personal projects\\ping ping ping ping pong\\ping-ping-ping-ping-pong\\assets\\contourfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\contourfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\opencv\u002Bunity\\demo\\scripts\\webcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\opencv\u002Bunity\\demo\\scripts\\webcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|c:\\users\\ukidvea\\documents\\github\\ping-ping-ping-ping-pong\\assets\\scripts\\contourfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\contourfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|c:\\users\\ukidvea\\documents\\github\\ping-ping-ping-ping-pong\\assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\goalwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\goalwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goalwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\accelerationzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\accelerationzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\accelerationzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\puckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\puckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{429C6B25-32B7-643A-6C4E-087B1ABF1D27}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -51,36 +51,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ContourFinder.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\ContourFinder.cs",
+              "RelativeDocumentMoniker": "Assets\\ContourFinder.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\ContourFinder.cs",
+              "RelativeToolTip": "Assets\\ContourFinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:01:25.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "WebCamera.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\WebCamera.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\WebCamera.cs",
               "RelativeDocumentMoniker": "Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\WebCamera.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\WebCamera.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\WebCamera.cs",
               "RelativeToolTip": "Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\WebCamera.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAYwEoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAqwEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T11:03:27.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContourFinder.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ContourFinder.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ContourFinder.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ContourFinder.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ContourFinder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:49:37.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AccelerationZone.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\AccelerationZone.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\AccelerationZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AccelerationZone.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\AccelerationZone.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\AccelerationZone.cs",
               "RelativeToolTip": "Assets\\Scripts\\AccelerationZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -90,9 +90,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "GoalWall.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GoalWall.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GoalWall.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoalWall.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GoalWall.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GoalWall.cs",
               "RelativeToolTip": "Assets\\Scripts\\GoalWall.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAuwHIAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -102,9 +102,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwB8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,9 +114,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ScoreManager.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ScoreManager.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ScoreManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreManager.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ScoreManager.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\ScoreManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ScoreManager.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAtwDMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,9 +126,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Portal.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\Portal.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\Portal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Portal.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\Portal.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\Portal.cs",
               "RelativeToolTip": "Assets\\Scripts\\Portal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -138,22 +138,21 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "PaddleController.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PaddleController.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PaddleController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PaddleController.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PaddleController.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PaddleController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PaddleController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAUwC4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T13:58:01.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T13:58:01.943Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "PuckController.cs",
-              "DocumentMoniker": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PuckController.cs",
+              "DocumentMoniker": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PuckController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PuckController.cs",
-              "ToolTip": "C:\\Users\\ukidvea\\Documents\\GitHub\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PuckController.cs",
+              "ToolTip": "D:\\Personal Projects\\Ping Ping Ping Ping Pong\\Ping-Ping-Ping-Ping-Pong\\Assets\\Scripts\\PuckController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PuckController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAApwDIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -14,6 +14,10 @@ public class ContourFinder : WebCamera
     [SerializeField] private float minContourArea = 500f;
     [SerializeField] private Scalar contourColor = new Scalar(0, 255, 0); // Green box for debug
 
+    [Header("Blob Size Settings")]
+    [SerializeField] private float minBlobSize = 500f;
+    [SerializeField] private float maxBlobSize = 5000f;
+
     [Header("UI & Debug")]
     [SerializeField] private FlipMode ImageFlip;
     [SerializeField] private bool ShowMaskImage = true;
@@ -23,6 +27,9 @@ public class ContourFinder : WebCamera
     private Mat mask = new Mat();
 
     public Vector2 blobPosition = new();
+    public float blobSize = 0f;
+    public float blobSizeNormalised = 0f;
+
     protected override bool ProcessTexture(WebCamTexture input, ref Texture2D output)
     {
         // 1. Convert input to Mat and flip
@@ -57,6 +64,9 @@ public class ContourFinder : WebCamera
         HierarchyIndex[] hierarchy;
         Cv2.FindContours(mask.Clone(), out contours, out hierarchy, RetrievalModes.External, ContourApproximationModes.ApproxSimple);
 
+        blobSize = 0f;
+        blobSizeNormalised = 0f;
+
         foreach (var contour in contours)
         {
             double area = Cv2.ContourArea(contour);
@@ -70,7 +80,13 @@ public class ContourFinder : WebCamera
                     1f - (float)(boundingBox.Y + boundingBox.Height / 2) / image.Height
                 );
 
-                //Debug.Log($"Target color object detected at normalized position: {blobPosition}");
+                blobSize = (float)area;
+
+                // Normalize and clamp
+                blobSizeNormalised = Mathf.InverseLerp(minBlobSize, maxBlobSize, blobSize);
+                blobSizeNormalised = Mathf.Clamp01(blobSizeNormalised);
+
+                Debug.Log($"Blob size: {blobSize}, Normalized: {blobSizeNormalised}, Position: {blobPosition}");
             }
         }
 

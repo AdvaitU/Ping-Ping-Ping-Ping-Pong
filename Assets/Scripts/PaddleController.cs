@@ -14,9 +14,8 @@ public class PaddleController : MonoBehaviour
     public bool openCVControlled = false;       // If true, paddle follows mouse cursor
     public ContourFinder openCV;
 
-    private float margin = 0.3f; // Margin for paddle to be in to snap to an edge
-    private float topMargin = 0.5f; // Top is a special case as it will need a larger reach
-    private float yAlignment = 5.0f; // Y position to align the paddle to regardless of x
+    private float yMin = 0.0f;
+    private float yMax = 5.0f;
 
     private Rigidbody2D rb;
     private Vector2 lastPosition;
@@ -52,7 +51,7 @@ public class PaddleController : MonoBehaviour
             Rigidbody2D puckRb = collision.gameObject.GetComponent<Rigidbody2D>();
             if (puckRb != null)
             {
-                puckRb.AddForce(currentVelocity * hitForceMultiplier, ForceMode2D.Impulse);  // Adding new Vector2(1, 1) to avoid zero vector
+                puckRb.AddForce(currentVelocity + new Vector2(0, 1) * hitForceMultiplier, ForceMode2D.Impulse);  // Adding new Vector2(1, 1) to avoid zero vector
                 
             }
         }
@@ -84,32 +83,36 @@ public class PaddleController : MonoBehaviour
     private void UseCVTracking()
     {   
 
-        // ------------------------------------------------------------------------------------------------
         Vector2 blobPos = openCV.blobPosition;       // Take blob position from OpenCV ContourFinder script
-        // ------------------------------------------------------------------------------------------------\
+        float blobSize = openCV.blobSizeNormalised;                // Take blob size from OpenCV ContourFinder script
+        if (blobPos == Vector2.zero) return;         // If no blob is detected, do not update position 
+
+        Vector2 centrePt = new Vector2(0.5f, 0.5f);         // Center of the screen in normalized coordinates
+        DiagonalQuadrant quadrant = GetQuadrantByAngle(blobPos.x, blobPos.y, 1.0f, 1.0f);
+
+        //Debug.Log("The Blob is in the " + quadrant + " quadrant.");
 
         Vector2 currentPosition = transform.position;       // Make a copy of the current position
+        float yAlignment = MapRange(blobSize, 0.0f, 1.0f, yMin, yMax); // Map blob size to y position (0.0f to 5.0f)
 
-        if (blobPos.y <= margin)                                      // Aligned to bottom
+        //Switch-Case using quadrant to determine the position of the paddle
+        switch (quadrant)
         {
-            currentPosition = new Vector2(MapRange(blobPos.x, 0.0f, 1.0f, 10.0f, 20.0f), yAlignment); // Align to floor
+            case DiagonalQuadrant.Top:
+                currentPosition = new Vector2(40.0f - (blobPos.x * 10.0f), yAlignment); // Align to ceiling (30.0f to 40.f) --> Using (40.0f - x) to invert it
+                break;
+            case DiagonalQuadrant.Left:
+                currentPosition = new Vector2(10.0f - (blobPos.y * 10.0f), yAlignment); // Align to Left Wall
+                break;
+            case DiagonalQuadrant.Bottom:
+                currentPosition = new Vector2(10.0f + (blobPos.x * 10.0f), yAlignment); // Align to ceiling
+                break;
+            case DiagonalQuadrant.Right:
+                currentPosition = new Vector2(20.0f + (blobPos.y * 10.0f), yAlignment); // Align to Right Wall
+                break;
         }
-        else if (blobPos.y >= 1.0f - topMargin)                             // Aligned to top  --> special topMargin usage
-        {
-            currentPosition = new Vector2(MapRange(blobPos.x, 0.0f, 1.0f, 30.0f, 40.0f), yAlignment); // Align to ceiling
-        }
-        else if (blobPos.x <= margin)                                  // Aligned to left
-        {
-            currentPosition = new Vector2(MapRange(blobPos.y, 0.0f, 1.0f, 0.0f, 10.0f), yAlignment); // Align to Left Wall
-        }
-        else if (blobPos.x >= 1.0f - margin)                           // Aligned to right
-        {
-            currentPosition = new Vector2(MapRange(blobPos.y, 0.0f, 1.0f, 20.0f, 30.0f), yAlignment); // Align to Right Wall
-        }
-        else                                                            // In the middle
-        {
-            // Do nothing
-        }
+
+
 
         currentVelocity = (currentPosition - lastPosition) / Time.deltaTime; // Calculate velocity
         lastPosition = currentPosition; // Update last position
@@ -125,5 +128,38 @@ public class PaddleController : MonoBehaviour
     {
         return (value - fromMin) / (fromMax - fromMin) * (toMax - toMin) + toMin;
     }
+
+
+    // For quadrant calculation
+    public enum DiagonalQuadrant
+    {
+        Top,
+        Left,
+        Bottom,
+        Right
+    }
+
+    public static DiagonalQuadrant GetQuadrantByAngle(float x, float y, float screenWidth, float screenHeight)
+    {
+        float centerX = screenWidth / 2f;
+        float centerY = screenHeight / 2f;
+
+        float dx = x - centerX;
+        float dy = y - centerY;
+
+        float angleDeg = Mathf.Atan2(dy, dx) * Mathf.Rad2Deg;
+        if (angleDeg < 0) angleDeg += 360f;
+
+        if (angleDeg >= 45f && angleDeg < 135f)
+            return DiagonalQuadrant.Top;
+        else if (angleDeg >= 135f && angleDeg < 225f)
+            return DiagonalQuadrant.Left;
+        else if (angleDeg >= 225f && angleDeg < 315f)
+            return DiagonalQuadrant.Bottom;
+        else
+            return DiagonalQuadrant.Right;
+    }
+
+
 
 }
